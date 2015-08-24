@@ -1,0 +1,64 @@
+name = Clean Canvas
+description = Clean Canvas Theme
+core = 7.x
+
+regions[top_bar_left] = Top Bar Left
+regions[top_bar_right] = Top Bar Right
+regions[header] = Header
+regions[help] = Help
+regions[page_top] = Page top
+regions[page_bottom] = Page bottom
+regions[featured] = Featured
+
+regions[content_top] = Content top
+regions[content_middle_left] = Content Left
+regions[content_middle_right] = Content Right
+regions[content] = Content
+regions[content_bottom] = Content bottom
+regions[content_most_bottom] = Content most bottom
+regions[sidebar_first] = Sidebar first
+regions[sidebar_second] = Sidebar second
+
+regions[triptych_first] = Triptych first
+regions[triptych_middle] = Triptych middle
+regions[triptych_last] = Triptych last
+
+regions[footer_firstcolumn] = Footer first column
+regions[footer_secondcolumn] = Footer second column
+regions[footer_thirdcolumn] = Footer third column
+
+regions[footer_bottom_first] = Footer bottom first
+regions[footer_bottom_second] = Footer bottom second
+
+settings[shortcut_module_link] = 0
+
+stylesheets[all][] = assets/css/bootstrap/bootstrap.min.css
+stylesheets[all][] = assets/css/compiled/bootstrap-overrides.css
+stylesheets[all][] = assets/css/compiled/theme.css
+stylesheets[all][] = assets/css/lib/animate.css
+stylesheets[all][] = assets/css/lib/isotope.css
+stylesheets[all][] = assets/css/compiled/index.css
+stylesheets[all][] = assets/css/compiled/about.css
+stylesheets[all][] = assets/css/compiled/backgrounds.css
+stylesheets[all][] = assets/css/compiled/blog.css
+stylesheets[all][] = assets/css/compiled/blogpost.css
+stylesheets[all][] = assets/css/compiled/coming-soon.css
+stylesheets[all][] = assets/css/compiled/contact.css
+stylesheets[all][] = assets/css/compiled/features.css
+stylesheets[all][] = assets/css/compiled/portfolio.css
+stylesheets[all][] = assets/css/compiled/portfolio-item.css
+stylesheets[all][] = assets/css/compiled/pricing.css
+stylesheets[all][] = assets/css/compiled/reset.css
+stylesheets[all][] = assets/css/compiled/services.css
+stylesheets[all][] = assets/css/compiled/sign-in.css
+stylesheets[all][] = assets/css/compiled/sign-up.css
+stylesheets[all][] = assets/css/lib/flexslider.css
+stylesheets[all][] = assets/css/custom.css
+
+scripts[] = assets/js/bootstrap.min.js
+scripts[] = assets/js/jquery.isotope.min.js
+scripts[] = assets/js/index-slider.js
+scripts[] = assets/js/jquery.countdown.min.js
+scripts[] = assets/js/theme.js
+scripts[] = assets/js/flexslider.js
+scripts[] = assets/js/custom.js

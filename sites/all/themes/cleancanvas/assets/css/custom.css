@@ -1,0 +1,757 @@
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(http://fonts.gstatic.com/s/lato/v11/dPJ5r9gl3kK6ijoeP1IRsvY6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(http://fonts.gstatic.com/s/lato/v11/EsvMC5un3kjyUhB9ZEPPwg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(http://fonts.gstatic.com/s/lato/v11/UyBMtLsHKBKXelqf4x7VRQ.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(http://fonts.gstatic.com/s/lato/v11/1YwB1sO8YE1Lyjf12WNiUA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(http://fonts.gstatic.com/s/lato/v11/ObQr5XYcoH0WBoUxiaYK3_Y6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(http://fonts.gstatic.com/s/lato/v11/H2DMvhDLycM56KNuAtbJYA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Lato Black'), local('Lato-Black'), url(http://fonts.gstatic.com/s/lato/v11/R4a6fty3waPci7C44H8AjvY6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Lato Black'), local('Lato-Black'), url(http://fonts.gstatic.com/s/lato/v11/tI4j516nok_GrVf4dhunkg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Lato Light Italic'), local('Lato-LightItalic'), url(http://fonts.gstatic.com/s/lato/v11/XNVd6tsqi9wmKNvnh5HNEBJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Lato Light Italic'), local('Lato-LightItalic'), url(http://fonts.gstatic.com/s/lato/v11/2HG_tEPiQ4Z6795cGfdivFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'), url(http://fonts.gstatic.com/s/lato/v11/YMOYVM-eg6Qs9YzV9OSqZfesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'), url(http://fonts.gstatic.com/s/lato/v11/PLygLKRVCQnA5fhu3qk5fQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(http://fonts.gstatic.com/s/lato/v11/AcvTq8Q0lyKKNxRlL28RnxJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(http://fonts.gstatic.com/s/lato/v11/HkF_qI1x_noxlxhrhMQYEFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 900;
+  src: local('Lato Black Italic'), local('Lato-BlackItalic'), url(http://fonts.gstatic.com/s/lato/v11/81X-1TO5y4aMK2PPy9kFwxJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 900;
+  src: local('Lato Black Italic'), local('Lato-BlackItalic'), url(http://fonts.gstatic.com/s/lato/v11/VNUH7ZAcagYBWsAiBBCEY1tXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+/*========= FireFox =======*/
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(http://fonts.gstatic.com/s/lato/v11/EsvMC5un3kjyUhB9ZEPPwg.woff2) format('woff2'), url(http://fonts.gstatic.com/s/lato/v11/KT3KS9Aol4WfR6Vas8kNcg.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(http://fonts.gstatic.com/s/lato/v11/1YwB1sO8YE1Lyjf12WNiUA.woff2) format('woff2'), url(http://fonts.gstatic.com/s/lato/v11/9k-RPmcnxYEPm8CNFsH2gg.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(http://fonts.gstatic.com/s/lato/v11/H2DMvhDLycM56KNuAtbJYA.woff2) format('woff2'), url(http://fonts.gstatic.com/s/lato/v11/wkfQbvfT_02e2IWO3yYueQ.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Lato Black'), local('Lato-Black'), url(http://fonts.gstatic.com/s/lato/v11/tI4j516nok_GrVf4dhunkg.woff2) format('woff2'), url(http://fonts.gstatic.com/s/lato/v11/BVtM30trf7q_jfqYeHfjtA.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Lato Light Italic'), local('Lato-LightItalic'), url(http://fonts.gstatic.com/s/lato/v11/2HG_tEPiQ4Z6795cGfdivFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2'), url(http://fonts.gstatic.com/s/lato/v11/2HG_tEPiQ4Z6795cGfdivD8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'), url(http://fonts.gstatic.com/s/lato/v11/PLygLKRVCQnA5fhu3qk5fQ.woff2) format('woff2'), url(http://fonts.gstatic.com/s/lato/v11/oUan5VrEkpzIazlUe5ieaA.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(http://fonts.gstatic.com/s/lato/v11/HkF_qI1x_noxlxhrhMQYEFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2'), url(http://fonts.gstatic.com/s/lato/v11/HkF_qI1x_noxlxhrhMQYED8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 900;
+  src: local('Lato Black Italic'), local('Lato-BlackItalic'), url(http://fonts.gstatic.com/s/lato/v11/VNUH7ZAcagYBWsAiBBCEY1tXRa8TVwTICgirnJhmVJw.woff2) format('woff2'), url(http://fonts.gstatic.com/s/lato/v11/VNUH7ZAcagYBWsAiBBCEYz8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
+/*========== Global ========*/
+.main-container .section_header {
+  //margin-bottom:0px;
+}
+
+.page-header {
+  color: #646464;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 27px;
+  border-bottom: 1px solid #b3b3b3;
+  padding-bottom: 0px;
+  display: inline-block;
+  margin: 0;
+}
+
+.region-top-bar-left h1.page-header{
+  margin-bottom: 0;
+}
+
+/*===========Styles ========*/
+#footer .headline h2 {
+  color: #c4c4c4;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 25px;
+  margin-bottom: 40px;
+  margin-left: 15px;
+  text-align:left;
+}
+
+#footer .recent_posts img{
+  border-radius:50%;
+}
+
+.element-invisible {
+    display: none;
+}
+
+ul.tabs {
+    padding-left: 0;
+}
+
+ul.tabs li {
+    display: inline;
+    margin-right: 10px;
+}
+
+ul.tabs li a {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #666;
+}
+
+ul.tabs li.active a {
+    border: 1px solid #72c02c;
+}
+
+.img-responsive img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.region-top-bar-right .form-submit,
+.page-search .search-form .form-submit,
+.page-search .region-top-bar-right .search-form{
+  display:none;
+}
+
+#footer .recent_posts .post .title a {
+  color:#b5b5b6;
+}
+
+.section_header {
+  width:auto;
+}
+/********** Blog Post *****/
+#blog_post .section_header input[type="text"] {
+  width:58%;
+}
+
+#blog_post .section_header form label{
+  display:none;
+}
+
+#blog_post .sidebar .sidebar_menu li a {
+  color: #333;
+  font-size: 14px;
+}
+
+#blog_post .sidebar .sidebar_menu li a:hover {
+  color: #1187D8; 
+}
+/***** Contact Form *****/
+#footer .contact input[type="email"]{
+	border: none;
+	background-color: #1f1f21;
+	color: #868687;
+	padding: 8px 20px;
+	border-radius: 3px;
+	font-size: 14px;
+	font-family: Lato !important;
+	width: 95%;
+	-webkit-transition: background-color .2s linear;
+	-moz-transition: background-color .2s linear;
+	margin-bottom: 10px; 
+}
+@media (max-width: 768px) {
+  #footer .contact input[type="email"] {
+    width:100%;
+  }
+}
+#footer .contact input[type="email"]:focus{
+	border: none;
+	box-shadow: none;
+	background-color: #000; 
+}
+#footer .contact input[type="email"]:moz-placeholder {
+	color: #868687; 
+}
+#footer .contact input[type="email"]::-webkit-input-placeholder {
+	color: #868687; 
+}
+#footer .contact input[type="email"]:-ms-input-placeholder{
+	color: #868687; 
+}
+#footer .contact input[type="text"] {
+  display: initial;
+}
+/********* Comment Form *****/
+.comment-form .form-item-name {width:50%;padding-right:10px;float:left;}
+.comment-form .form-item-mail {width:50%;padding-left:10px;float:left;}
+.comment-form .form-textarea-wrapper {width:100%;float:left;}
+.comment-form .description {display:none;}
+.comment-form .form-submit {
+	float: right;
+	color: #fff;
+	border: 0 none;
+	background: #187CCC;
+	text-shadow: none;
+	padding: 4px 15px 4px;
+	box-shadow: none;
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: bold;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-o-border-radius: 4px;
+	-webkit-transition: background linear .2s, box-shadow linear .2s;
+	-moz-transition: background linear .2s, box-shadow linear .2s;
+	-o-transition: background linear .2s, box-shadow linear .2s;
+	transition: background linear .2s, box-shadow linear .2s; 
+}
+.comment-form .form-submit:hover {
+  background: #252528; 
+}
+.comment-form textarea {
+  margin-top: 20px;
+}
+#blog_post .comments {
+  border-bottom:none;
+  padding-top:0px;
+}
+.webform-component--top-text p {
+  color: #939394;
+  font-size: 19px;
+  margin-bottom: 47px;
+  font-style: italic;
+  line-height: 24px;
+}
+#webform-client-form-19 .form-text {
+  padding-left: 39px;
+  margin-bottom: 10px;
+  color: black;
+  height: 39px;
+  border-radius: 3px;
+}
+#webform-client-form-19 input.name {
+  background: url(".../../../img/formname.png") white no-repeat 5px;
+}
+#webform-client-form-19 input.mail {
+  background: url(".../../../img/formmail.png") white no-repeat 5px;
+}
+#webform-client-form-19 input.phone {
+  background: url(".../../../img/formname.png") white no-repeat 5px;
+}
+#webform-client-form-19 .webform-component-boolean {
+  margin:10px;
+  float: left;
+  width: 50%;
+}
+#webform-client-form-19 .form-actions .form-submit {
+  float: left;
+  width:200px;
+  margin-right:15px;
+}
+#webform-client-form-19 .form-actions input[type="submit"] {
+  float: right;
+  text-transform: uppercase;
+  color: #fff;
+  background: #187CCC;
+  font-size: 15px;
+  padding: 4px 12px;
+  border: 0 none;
+  border-radius: 3px;
+  -webkit-transition: background linear .2s, box-shadow linear .2s;
+  -moz-transition: background linear .2s, box-shadow linear .2s;
+  -o-transition: background linear .2s, box-shadow linear .2s;
+  transition: background linear .2s, box-shadow linear .2s;
+}
+@media (max-width: 768px) {
+  #webform-client-form-19 .form-actions .form-submit {
+    float: left;
+    width:100%;
+    margin-right:0px;
+    padding-left:10px;
+    padding-right:10px;
+  } 
+}
+/***** Coming Soon  ****/
+#coming_soon .count .circle div {
+  color: #fff;
+  display: inline-block;
+  font-size: 33px;
+  margin-top: 36px;
+  font-weight: bold;
+}
+#block-webform-client-block-24 {
+  margin-top: 20px;
+}
+#coming_soon .email_wrapp .wrapp input[type="email"] {
+  float: left;
+  font-size: 16px;
+  border-radius: 3px;
+  height: 36px;
+  margin-bottom: 0;
+  width: 35%;
+  margin-left: 25px;
+}
+#coming_soon .email_wrapp .webform-submit {
+  text-transform: uppercase;
+  color: #fff;
+  border: 0 none;
+  box-shadow: none;
+  margin: -131px 50px 0 0;
+  background: #1189D9;
+  font-weight: bold;
+  text-shadow: none;
+  padding: 8px 10px;
+  font-size: 14px;
+  float: right;
+  -webkit-transition: background linear .2s, box-shadow linear .2s;
+  -moz-transition: background linear .2s, box-shadow linear .2s;
+  -o-transition: background linear .2s, box-shadow linear .2s;
+  transition: background linear .2s, box-shadow linear .2s;
+  border-radius: 4px 4px 4px 4px;
+  -webkit-border-radius: 4px 4px 4px 4px;
+  -moz-border-radius: 4px 4px 4px 4px;
+}
+#coming_soon .email_wrapp .wrapp {
+  width:100%;
+}
+@media (max-width: 768px) {
+	#coming_soon .email_wrapp .wrapp input[type="email"] {
+		width:77%;
+		margin-left:0;
+	}
+	#coming_soon .email_wrapp .webform-submit {
+	  margin:-63px 50px 0 0;
+	}
+}
+
+@media (max-width: 480px) {
+  #coming_soon .email_wrapp .wrapp input[type="email"] {
+		width:70%;
+		margin-left:0;
+	}
+  #coming_soon .count .circle div {
+    margin-top:25px;
+  }
+  #coming_soon .email_wrapp .wrapp p {
+    font-size: 14px;
+  }
+}
+
+/********** Blog Listing Page ***********/
+#blog .post_row .post .img img {
+  width: 100%;
+  height: auto;
+}
+#blog .section_header input[type="text"] {
+  width: 60%;
+}
+/****** User Register Page *****/
+form[id^=user-register-form] .form-item .description,
+form[id^=user-login] .form-item .description{
+  display:none;
+}
+
+.top-user-register-form input[type="text"],
+.top-user-register-form input[type="password"] {
+  border-radius: 3px;
+  font-size: 16px;
+  height: 35px;
+  color: black;
+  width: 100% !important;
+  margin-top: -4px;
+}
+
+.top-user-register-form .form-type-textfield {
+  width: 27%;
+  float: left;
+  margin: 0 10px 0px 0;
+}
+.top-user-register-form .form-type-password-confirm{
+  width: 54%;
+  float: left;
+}
+.top-user-register-form .form-type-password-confirm .form-type-password {
+  width: 47%;
+  float: left;
+  display:inline-block;
+}
+.top-user-register-form .form-type-password-confirm .form-item-pass-pass1 {
+  width: 49%;
+  float: left;
+  display:inline-block;
+}
+.top-user-register-form .form-type-password-confirm .form-item-pass-pass1{
+  margin: 0 10px 0px 0;
+}
+.top-user-register-form  input[type="submit"] {
+  margin-top: -5px;
+}
+
+.top-user-register-form #edit-alreadyreg--2 {
+  margin-top:15px;
+}
+
+@media (max-width: 767px) {
+	.top-user-register-form .form-type-textfield {
+		width: 97%;
+	  margin: 0 10px;
+  }
+  .top-user-register-form .form-type-password-confirm{
+    width: 97%;
+	  margin: 0 10px;
+  }
+	.top-user-register-form .form-type-password-confirm .form-type-password {
+		width: 100%;
+	}
+  .top-user-register-form .form-actions {
+    float: left;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+.region-content-middle-right form input[type="text"],
+.region-content-middle-right form input[type="password"] {
+  border-radius: 3px;
+  font-size: 16px;
+  margin-bottom: 16px;
+  height: 37px;
+  color: black;
+}
+
+#sign_up2 .signin_box .box form input[type="submit"] {
+  text-transform: uppercase;
+  color: #fff;
+  background: #187CCC;
+  font-size: 15px;
+  margin: 0 auto;
+  display: block;
+  padding: 6px 19px;
+  border: 0 none;
+  border-radius: 3px;
+  -webkit-transition: background linear .2s, box-shadow linear .2s;
+  -moz-transition: background linear .2s, box-shadow linear .2s;
+  -o-transition: background linear .2s, box-shadow linear .2s;
+  transition: background linear .2s, box-shadow linear .2s;
+}
+
+#sign_up2 .signin_box .box form #edit-alreadyreg {
+  margin-left: 0;
+  margin-bottom: 20px;
+  width: 100%;
+  color: #797979;
+  text-align: center;
+  overflow: hidden;
+}
+
+#sign_up1,
+#sign_in1 {
+  height: 340px;
+  margin-bottom: 90px;
+}
+
+/******* Login Form **********/
+.top-user-login-form .form-type-textfield,
+.top-user-login-form .form-type-password {
+  width:31%;
+  float: left; 
+}
+
+.top-user-login-form .form-type-textfield input,
+.top-user-login-form .form-type-password input{
+  width:97% !important;
+  float: left; 
+}
+
+.top-user-login-form .form-submit {
+  width:100px;
+  float: left;
+  margin-top: -5px;
+}
+.top-user-login-form .top-login-links {
+  color: #fff;
+  float: left;
+}
+
+.top-user-login-form .form-item-remember-me {
+  color: #fff;
+}
+
+.top-user-login-form .remember {
+  padding-top:	15px;
+}
+
+@media (max-width: 767px) {
+	.top-user-login-form .form-type-textfield,
+	.top-user-login-form .form-type-password {
+		width:100% !important;
+	}
+	.top-user-login-form .form-item-remember-me {
+    color: #000;
+    float: left;
+		width: 100%;
+		text-align: left;
+		margin-top: 15px;
+  }
+  .top-user-login-form .form-wrapper {
+    float: left;
+    width:100%;
+  }
+  .top-user-login-form .form-actions.form-wrapper {
+    margin: 0 auto;
+    width:100px;
+    float:none;
+  }
+  #sign_in1 .dosnt {
+     margin:0;
+     width:100%;
+  }
+  #sign_in1 .remember {
+     float: left;
+  }
+}
+
+#sign_up2 #edit-alreadyreg{
+   margin-top: 10px;
+}
+
+.middle-section {
+  margin: 40px 0;
+}
+/*********** Menu Style *******/
+.region-header .menu-block-wrapper > ul > li > a {
+  text-transform: uppercase;
+}
+
+.region-header .menu-block-wrapper ul li a.dropdown-toggle:after {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px solid #fff;
+  border-right: 4px solid transparent;
+  border-bottom: 0 dotted;
+  border-left: 4px solid transparent;
+  content: "";
+}
+
+body.not-front {
+ padding-top:0px;
+}
+/******** Comments **********/
+.comment ul.links li {
+  display:inline;
+}
+.comment .name span {
+  float: left;
+  margin-right:10px;
+  text-transform: capitalize;
+}
+.comment .name ul li a {
+  font-weight:bold;
+  text-decoration:underline;
+  text-transform: capitalize;
+}
+.comments .indented {
+  margin-left: 16%;
+}
+
+/******* Search Page *****/
+.page-search .search-form .form-type-textfield .form-text {
+  width:auto;
+}
+.page-search .search-form .form-type-textfield input[type="text"] {
+  margin-bottom: 20px;
+  background: url(".../../../img/search.png") white no-repeat 5px;
+  padding-left: 28px;
+  border-radius: 5px;
+}
+.page-header {
+  margin-bottom:15px;
+}
+.page-search .view-search .views-row{
+   border-bottom: 1px solid #d8d8d8;
+   margin: 10px 0;
+   padding: 10px 0;
+}
+
+/************ Sidebar Menu ********/
+.menu-name-menu-sidebar-menu ul li {
+  margin-bottom: 6px;
+}
+
+/****** Archive *********/
+.view-archive .view-content .post {
+  border-bottom: 1px solid #d8d8d8;
+  padding-bottom: 10px;
+  padding: 10px 0;
+  margin: 10px 0;
+}
+.archive-images {
+  margin: 0 15px 15px 0;
+}
+
+/********* Price Page ********/
+#in_pricing .pricing {
+  display:inline;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #coming_soon .email_wrapp .wrapp input[type="email"] {
+    margin-left:150px;
+  }
+  #coming_soon .email_wrapp .form-actions {
+    margin:65px 220px 0 0;
+  }
+  #process .areas .last_circle {
+   float: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  #webform-client-form-19 .form-actions input[type="submit"] {
+		margin: 0 auto;
+		float: none;
+		width: 53%;
+		display: block;
+		padding: 7px;
+  }
+  #blog .section_header input[type="text"] {
+    margin: 0 auto;
+    float: none;
+    width:42%;
+  }
+}
+
+
+
