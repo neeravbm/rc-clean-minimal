@@ -71,8 +71,11 @@ function cleancanvas_preprocess_page(&$vars) {
   $vars['pages_id']  = NULL;
   if(isset($vars['node'])) {
 		$node = $vars['node'];
-		if($node->type == 'blog_post') {
-			$vars['pages_id'] = $node->type;	
+		if($node->type == 'blog') {
+			$vars['pages_id'] = "blog_post";	
+		}
+		else if($node->type == 'portfolio') {
+			$vars['pages_id'] = "portfolio_tem";	
 		}
 		else if ($node->nid == 19) {
 			$vars['pages_id'] = 'contact';
@@ -117,14 +120,14 @@ function cleancanvas_two_js_alter(&$javascript) {
 /**
  * Implements hook__preprocess_menu_link().
  * 
- * Used to add class in menu for dropdown toggle functionality
+ * Used to add data-toggle attribute in menu for dropdown toggle functionality
  */
 function cleancanvas_preprocess_menu_link(&$vars){
   global $user;
   $element = &$vars['element'];
   if($element['#original_link']['expanded'] == 1 && $element['#original_link']['menu_name'] == 'main-menu'){
     $element['#localized_options']['attributes']['data-toggle'] = 'dropdown';
-    $element['#localized_options']['attributes']['class'][] = 'dropdown-toggle';
+    //$element['#localized_options']['attributes']['class'][] = 'dropdown-toggle';
   }
 }
 
@@ -145,7 +148,7 @@ function cleancanvas_process_page(&$vars) {
 	}
   // hide page title from node page
   if(isset($vars['node'])) {
-		if ($vars['node']->type == 'blog_post') {
+		if ($vars['node']->type == 'blog') {
 			$vars['title'] = null;
 	  }
 		else if ($arg[0] == 'node' && $arg[1] == '18') {
@@ -189,7 +192,7 @@ function cleancanvas_preprocess_node(&$vars) {
     $vars['theme_hook_suggestions'][] = 'node__' . $vars['node']->type . '__teaser'; 
   }
   
-  if ($vars['type'] == 'blog_post') {
+  if ($vars['type'] == 'blog') {
 		  
 		  $node = node_load($vars['nid']);
 		  
@@ -302,7 +305,7 @@ function cleancanvas_block_view_alter(&$data, $block) {
 	if ($block->region == 'top_bar_left') {
 		if (isset($arg[1]) && is_numeric($arg[1]) && $arg[0] == 'node') {
 		  $node = menu_get_object();
-		  if ($node->type == 'blog_post') {
+		  if ($node->type == 'blog') {
 			   drupal_set_title('Blog Post');	
 			}
 	  }
@@ -318,7 +321,7 @@ function cleancanvas_block_view_alter(&$data, $block) {
 function cleancanvas_preprocess_comment(&$vars) {
 	$comment = $vars['elements']['#comment'];
   $node = $vars['elements']['#node'];
-  if (isset($node) && $node->type == 'blog_post') {
+  if (isset($node) && $node->type == 'blog') {
 		 $vars['created'] = date('D, jM');
 	}
 	$vars['author'] = theme('username', array('account' => $comment));
