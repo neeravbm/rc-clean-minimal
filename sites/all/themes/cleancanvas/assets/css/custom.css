@@ -182,6 +182,10 @@
   //margin-bottom:0px;
 }
 
+.img-rounded {  
+  border-radius: 6px;  
+} 
+
 .page-header {
   color: #646464;
   font-weight: 300;

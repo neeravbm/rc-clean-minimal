@@ -79,36 +79,14 @@
  *
  * @ingroup themeable
  */
- ?>
-<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
-  <div class="content"<?php print $content_attributes; ?>>
-		
-		<div class="row">
-      <div class="col-sm-7 left_box">
-        <?php 
-          if(isset($portfolio_gallery)):
-            print $portfolio_gallery;
-          endif;
-        ?>  
-		  </div> <!--/.left_box-->
-      <div class="col-sm-5 right_box">
-        <?php print render($title_prefix); ?>
-				<?php if ($page): ?>
-					<h2<?php print $title_attributes; ?>><?php print $title; ?></h2>
-				<?php endif; ?>
-				<?php print render($title_suffix); ?>
-				
-				<?php if ($content['body']): ?>
-					<?php print render($content['body']); ?>
-				<?php endif; ?>
-      </div>
-     </div>	<!--/.row-->
-     
-	  <?php
-			// We hide the comments and links now so that we can render them later.
-			hide($content['comments']);
-			hide($content['links']);
-			print render($content);
-		?>
-  </div>
+?>
+<div class="photo <?php if (isset($port_classes)): print $port_classes; endif; ?>">
+	<?php if (isset($portfolio_img_url)): ?>
+	  <img src="<?php print $portfolio_img_url; ?>" class="img-responsive" />
+	<?php endif; ?>
+	<a href="<?php print $node_url; ?>" class="mask">
+			<h3<?php print $title_attributes; ?>><?php print $title; ?></h3>
+			<small>Art</small>
+			<div class="more">+</div>
+	</a>
 </div>

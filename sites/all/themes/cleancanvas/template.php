@@ -99,6 +99,9 @@ function cleancanvas_preprocess_page(&$vars) {
 	else if ($arg[0] == 'search') {
 		$vars['pages_id'] = 'blog_post';	
 	}
+	else if ($arg[0] == 'portfolio1') {
+		$vars['pages_id'] = "portfolio";
+	}
 	
 }
 
@@ -127,7 +130,9 @@ function cleancanvas_preprocess_menu_link(&$vars){
   $element = &$vars['element'];
   if($element['#original_link']['expanded'] == 1 && $element['#original_link']['menu_name'] == 'main-menu'){
     $element['#localized_options']['attributes']['data-toggle'] = 'dropdown';
-    //$element['#localized_options']['attributes']['class'][] = 'dropdown-toggle';
+  }
+  if($element['#original_link']['menu_name'] == 'menu-portfolio-menu'){
+    $element['#localized_options']['attributes']['data-filter'] = '*';
   }
 }
 
@@ -239,6 +244,25 @@ function cleancanvas_preprocess_node(&$vars) {
       // Date
 			$vars['blog_submitted'] = date('D, jM');
 			$vars['blog_designation'] = $designation;
+	 }
+	 
+	 if ($vars['type'] == 'portfolio') {
+		 $node = node_load($vars['nid']);
+		 $images = field_get_items('node', $node, 'field_portfolio_images');
+		 $vars['portfolio_gallery'] = theme('portfolio_gallery_display', array('images' => $images));
+		 if ($vars['view_mode'] == 'teaser') {
+			 $vars['portfolio_img_url'] = image_style_url('large', $images[0]['uri']);  
+		 }
+		 
+		 $port_arr = array();
+		 $portfolios = field_get_items('node', $node, 'field_portfolio_category');
+		 if (sizeof($portfolios) > 0) {
+			  foreach ($portfolios as $portfolio) {
+				  $port_arr[] = strtolower($portfolio['value']);
+				}
+				$port_str = implode(' ', $port_arr);
+				$vars['port_classes'] = $port_str;
+		 }
 	 }
 }
 
