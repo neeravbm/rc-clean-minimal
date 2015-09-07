@@ -726,10 +726,78 @@ body.not-front {
 }
 
 /********* Price Page ********/
+.front #in_pricing {
+  margin-bottom:0px;
+}
 #in_pricing .pricing {
   display:inline;
 }
 
+#in_pricing .plan.black {
+  background: #252528;
+  box-shadow: none;
+}
+
+#in_pricing2 .wrapper img.ribbon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#in_pricing .charts_wrapp {
+  margin-top:0px;
+}
+
+.block .headline h2 {
+  color: #646464;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 27px;
+  border-bottom: 1px solid #b3b3b3;
+  padding-bottom: 0px;
+  display: inline-block;
+  margin-bottom: 60px;
+}
+
+.field-collection-container {
+  border-bottom:none;
+}
+
+.start {
+  width: 100%;
+  text-align: center;
+  margin-bottom:40px; 
+}
+.start p {
+	font-size: 24px;
+	display: inline-block;
+	color: #5B5B5D;
+	font-style: italic;
+	line-height: 26px;
+	margin: 0 18px 0 0; 
+}
+.start a {
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: bold;
+	border-radius: 4px;
+	padding: 7px 17px;
+	font-size: 17px;
+	background: #252528;
+	-webkit-transition: all .2s linear;
+	-moz-transition: all .2s linear; 
+}
+.start a:hover {
+  background: #2190DB; 
+}
+
+#in_pricing {
+  margin-top:0px;
+  margin-bottom:0px;;
+}
+.field-collection-container .field-items .field-item {
+  margin-bottom:0px;
+}        
 @media (min-width: 768px) and (max-width: 991px) {
   #coming_soon .email_wrapp .wrapp input[type="email"] {
     margin-left:150px;
@@ -756,6 +824,69 @@ body.not-front {
     width:42%;
   }
 }
+
+
+/********** Services ******/
+body.node-type-services .field-name-field-image {
+  float: left;
+  margin-right:20px;
+  margin-bottom:20px;
+}
+
+body.node-type-services h2 {
+  margin-top:0px;
+}
+
+/*.node-teaser.node-services .field-name-field-image{
+  margin-right:0px;
+  margin-bottom:0px;
+}
+*/
+.front #showcase {
+  margin-top:0px;
+}
+
+.block-views {
+  float:left;
+}
+
+/*Service Option 2*/
+.service_2 {
+  margin: 40px 0 115px; }
+  .service_2 .section_header h3 span {
+    font-size: 18px;
+    line-height: 20px; }
+  .service_2 .perk {
+    margin-bottom: 82px;
+    margin-left: 0; }
+  .service_2 .circle {
+    background: #1189D9;
+    text-align: center;
+    border-radius: 100%;
+    margin: 14px 0 0 0;
+    width: 136px;
+    height: 136px;
+    box-shadow: 1px 1px 2px 0px #E0E0E0; }
+    .service_2 .circle img {
+      margin-top: 42px; }
+  .service_2 .circle1 img {
+    margin-top: 49px;
+    margin-left: 20px; }
+  .service_2 .description_wrapper {
+    float: right; }
+    .service_2 .description_wrapper h5 {
+      font-size: 20px;
+      margin: 5px 0 10px 0; }
+       .service_2 .description_wrapper h5 a{
+         color:#333333;
+       }
+    .service_2 .description_wrapper p {
+      font-size: 14px;
+      line-height: 24px;
+      color: #3F3F3F;
+      margin-bottom: 0; }
+  .service_2 .last {
+    margin-bottom: 0; }
 
 
 

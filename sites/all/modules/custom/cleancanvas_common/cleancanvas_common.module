@@ -1,0 +1,14 @@
+<?php
+/**
+ * Implements hook_theme().
+ */
+function cleancanvas_common_theme($existing, $type, $theme, $path) {
+	$theme_dir = drupal_get_path('theme', variable_get('theme_default', NULL)) . '/templates';
+  return array(
+    'portfolio_gallery_display' => array(
+      'template' => 'portfolio--gallery--display',
+      'arguments' => array('images' => NULL),
+      'path' => $theme_dir,
+   ),
+ );
+}

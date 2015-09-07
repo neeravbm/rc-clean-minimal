@@ -77,6 +77,9 @@ function cleancanvas_preprocess_page(&$vars) {
 		else if($node->type == 'portfolio') {
 			$vars['pages_id'] = "portfolio_tem";	
 		}
+		else if($node->type == 'pricing') {
+			$vars['pages_id'] = "in_pricing";	
+		}
 		else if ($node->nid == 19) {
 			$vars['pages_id'] = 'contact';
 		}
@@ -99,7 +102,7 @@ function cleancanvas_preprocess_page(&$vars) {
 	else if ($arg[0] == 'search') {
 		$vars['pages_id'] = 'blog_post';	
 	}
-	else if ($arg[0] == 'portfolio1') {
+	else if ($arg[0] == 'portfolio') {
 		$vars['pages_id'] = "portfolio";
 	}
 	
@@ -156,6 +159,12 @@ function cleancanvas_process_page(&$vars) {
 		if ($vars['node']->type == 'blog') {
 			$vars['title'] = null;
 	  }
+	  if ($vars['node']->type == 'services') {
+			$vars['title'] = null;
+	  }
+	  if ($vars['node']->type == 'portfolio') {
+			$vars['title'] = null;
+	  }
 		else if ($arg[0] == 'node' && $arg[1] == '18') {
 			$vars['title'] = NULL;
 		}
@@ -169,7 +178,7 @@ function cleancanvas_process_page(&$vars) {
 			$vars['title'] = NULL;
 		}
 		else if ($vars['node']->type == 'pricing') {
-			$vars['title'] = NULL;
+			//$vars['title'] = NULL;
 		}
 		else if ($arg[0] == 'node' && $arg[1] == '23') {
 			$vars['title'] = NULL;
@@ -264,6 +273,10 @@ function cleancanvas_preprocess_node(&$vars) {
 				$vars['port_classes'] = $port_str;
 		 }
 	 }
+	 
+	 if ($vars['type'] == 'services') {
+		 //$node = node_load($vars['nid']);
+	 }
 }
 
 /**
@@ -349,5 +362,44 @@ function cleancanvas_preprocess_comment(&$vars) {
 		 $vars['created'] = date('D, jM');
 	}
 	$vars['author'] = theme('username', array('account' => $comment));
+}
+
+/**
+ * Implements hook_preprocess_field().
+ */
+function cleancanvas_preprocess_field(&$vars) {
+	// For Pricing Field collections
+  if ($vars['element']['#field_name'] == 'field_price_display') {
+    $vars['theme_hook_suggestions'][] = 'field__price_display';
+    $field_array = array('field_product_heading','field_product_details', 'field_most_popular', 'field_background_details','field_product_button');
+    rows_from_field_collection($vars, 'field_price_display', $field_array);
+  }
+}
+
+/**
+ * Creates a simple text rows array from a field collections, to be used in a
+ * field_preprocess function.
+ *
+ * @param $vars
+ *   An array of variables to pass to the theme template.
+ *
+ * @param $field_name
+ *   The name of the field being altered.
+ *
+ * @param $field_array
+ *   Array of fields to be turned into rows in the field collection.
+ */
+function rows_from_field_collection(&$vars, $field_name, $field_array) {
+  $vars['rows'] = array();
+  foreach($vars['element']['#items'] as $key => $item) {
+    $entity_id = $item['value'];
+    $entity = field_collection_item_load($entity_id);
+    $wrapper = entity_metadata_wrapper('field_collection_item', $entity);
+    $row = array();
+    foreach($field_array as $field){
+      $row[$field] = field_view_field('field_collection_item', $entity, $field, 'full');
+    }
+    $vars['rows'][] = $row;
+  }
 }
 

@@ -1,0 +1,5 @@
+name = Clear Canvas Common
+description = "Common functions - Shared functions for custom modules"
+package = Clear Canvas
+core = 7.x
+version = "7.x-1.0"
