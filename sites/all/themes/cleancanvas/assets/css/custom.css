@@ -206,6 +206,11 @@
   width:100%;
 }
 
+body .field-type-image img {
+  width:100%;
+  height: auto;
+}
+
 /*===========Styles ========*/
 #footer .headline h2 {
   color: #c4c4c4;
@@ -846,6 +851,13 @@ body.node-type-services .field-name-field-image {
   margin-bottom:20px;
 }
 
+body.node-type-services .field-name-field-image img {
+  border-radius:5px;
+  -webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-o-border-radius: 4px;
+}
+
 @media (max-width: 550px) {
   body.node-type-services .field-name-field-image {
     float: none;
@@ -952,5 +964,12 @@ body.node-type-services h2 {
 /*********** Protfolio *********/
 #portfolio_tem .right_box {
   margin-top:0px;
+}
+
+#portfolio_tem .thumbs .thumb {
+  margin-right:39px;
+}
+#portfolio_tem .left_box .big {
+  margin-bottom:20px;
 }
 

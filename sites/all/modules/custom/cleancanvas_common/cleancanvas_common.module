@@ -1,14 +1,54 @@
 <?php
+
 /**
  * Implements hook_theme().
  */
 function cleancanvas_common_theme($existing, $type, $theme, $path) {
 	$theme_dir = drupal_get_path('theme', variable_get('theme_default', NULL)) . '/templates';
   return array(
-    'portfolio_gallery_display' => array(
+    'portfolio_gallery_display' => array (
       'template' => 'portfolio--gallery--display',
       'arguments' => array('images' => NULL),
       'path' => $theme_dir,
    ),
+   'portfolio_category_links' => array (
+      'template' => 'portfolio--category--links',
+      'arguments' => array('allowed_values' => NULL),
+      'path' => $theme_dir,
+   ),
  );
 }
+
+/**
+ * Implements hook_block_info().
+ * 
+ * Used to create block of links on portfolio page
+ */
+function cleancanvas_common_block_info() {
+  $blocks = array();
+  $blocks['portfolio_link'] = array(
+    'info' => t('Portfolio Links'),
+    'status' => TRUE,
+    'weight' => 0,
+    'region' => -1,
+  );
+  return $blocks;
+}
+
+
+/**
+ * Implements hook_block_view().
+ */
+function cleancanvas_common_block_view($delta = '') {
+  $block = array();
+  switch ($delta) {
+    case 'portfolio_link':
+      module_load_include('inc', 'cleancanvas_common', 'includes/cleancanvas_commom.page');
+      $block['subject'] = NULL;
+      $block['content'] = _portfolio_links();
+      break;
+    }
+  return $block;
+}
+
+
