@@ -160,7 +160,7 @@ function cleancanvas_process_page(&$vars) {
 			$vars['title'] = null;
 	  }
 	  if ($vars['node']->type == 'services') {
-			$vars['title'] = null;
+			//$vars['title'] = null;
 	  }
 	  if ($vars['node']->type == 'portfolio') {
 			$vars['title'] = null;

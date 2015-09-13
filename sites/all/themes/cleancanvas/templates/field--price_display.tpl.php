@@ -24,7 +24,7 @@
 						<?php endif; ?>
 						<?php if($row['field_product_button']): ?>
 							<div class="field-price_display">
-								<a class="order" href="#"><?php print render($row['field_product_button']); ?></a>
+								<?php print render($row['field_product_button']); ?>
 							</div>
 						<?php endif; ?>
 					</div>

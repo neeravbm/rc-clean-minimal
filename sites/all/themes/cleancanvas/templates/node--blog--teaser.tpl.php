@@ -104,7 +104,7 @@
 					<p><?php print $blog_designation; ?></p>
 			</div>
 			
-			<a class="plus_wrapper" href="node/add/blog-post">
+			<a class="plus_wrapper" href="node/add/blog">
 					<span>&#43;</span>
 			</a>
   </div>

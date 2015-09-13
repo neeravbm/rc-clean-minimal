@@ -201,6 +201,11 @@
   margin-bottom: 0;
 }
 
+.front .region-content .block {
+  float: left;
+  width:100%;
+}
+
 /*===========Styles ========*/
 #footer .headline h2 {
   color: #c4c4c4;
@@ -700,9 +705,9 @@ body.not-front {
   padding-left: 28px;
   border-radius: 5px;
 }
-.page-header {
+/*.page-header {
   margin-bottom:15px;
-}
+}*/
 .page-search .view-search .views-row{
    border-bottom: 1px solid #d8d8d8;
    margin: 10px 0;
@@ -731,6 +736,10 @@ body.not-front {
 }
 #in_pricing .pricing {
   display:inline;
+}
+
+#in_pricing .start a {
+  width: auto!important;
 }
 
 #in_pricing .plan.black {
@@ -827,14 +836,35 @@ body.not-front {
 
 
 /********** Services ******/
+/*.page-services .page-header {
+  margin-bottom: 60px;
+}*/
+
 body.node-type-services .field-name-field-image {
   float: left;
   margin-right:20px;
   margin-bottom:20px;
 }
 
+@media (max-width: 550px) {
+  body.node-type-services .field-name-field-image {
+    float: none;
+    margin-right:20px;
+    margin-bottom:20px;
+  }
+  
+  body.node-type-services .field-name-field-image img {
+    width:100%;
+    max-width:100%;
+  }
+}
+
+body.node-type-services .page-header {
+  visibility:hidden;
+}
+
 body.node-type-services h2 {
-  margin-top:0px;
+  margin-top:-10px;
 }
 
 /*.node-teaser.node-services .field-name-field-image{
@@ -842,17 +872,18 @@ body.node-type-services h2 {
   margin-bottom:0px;
 }
 */
-.front #showcase {
+#showcase {
   margin-top:0px;
 }
 
 .block-views {
   float:left;
+  width: 100%;
 }
 
 /*Service Option 2*/
 .service_2 {
-  margin: 40px 0 115px; }
+  margin: 40px 0 0px; }
   .service_2 .section_header h3 span {
     font-size: 18px;
     line-height: 20px; }
@@ -889,4 +920,37 @@ body.node-type-services h2 {
     margin-bottom: 0; }
 
 
+/* Responsive
+-------------------------------------------------- */
+@media (min-width: 768px) and (max-width: 979px) {
+  .service_2 .description_wrapper {
+    width: 77%; }
+}
+@media (max-width: 767px) {
+  .service_2 .perk {
+    text-align: center;
+    margin-bottom: 70px; }
+  .service_2 .circle {
+    float: none;
+    margin-bottom: 20px;
+    display: inline-block; }
+  .service_2 .description_wrapper h5 {
+    margin-bottom: 15px; }
+}
+
+/********* Pager *********/
+.pager .pager-current{
+  border: 1px solid #ddd;
+  padding: 5px 14px;
+  display: inline-block;
+}
+
+.pager li>a{
+  border-radius:0;
+}
+
+/*********** Protfolio *********/
+#portfolio_tem .right_box {
+  margin-top:0px;
+}
 
