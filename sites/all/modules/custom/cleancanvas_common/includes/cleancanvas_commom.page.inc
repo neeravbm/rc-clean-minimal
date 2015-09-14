@@ -21,3 +21,21 @@ function _portfolio_links(){
 	}
 	return $output;
 }
+
+/**
+ * Second User Register
+ */
+function user_register_second() {
+	$variables = array();
+  $variables['register_form'] = drupal_get_form("user_register_form");
+  return theme('user_register_second',$variables);	
+}
+
+/**
+ * Second User Login
+ */
+function user_login_second() {
+	$variables = array();
+  $variables['login_form'] = drupal_get_form("user_login");
+  return theme('user_login_second',$variables);		
+}

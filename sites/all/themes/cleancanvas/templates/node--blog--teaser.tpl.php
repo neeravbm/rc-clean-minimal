@@ -103,9 +103,8 @@
 					<h6><?php print $username; ?></h6>
 					<p><?php print $blog_designation; ?></p>
 			</div>
-			
-			<a class="plus_wrapper" href="node/add/blog">
-					<span>&#43;</span>
-			</a>
+			<?php
+			  print l('<span>&#43;</span>','node/' . $node->nid, array('attributes' => array('class' => 'plus_wrapper'), 'html' => true));
+			?>
   </div>
 </div>

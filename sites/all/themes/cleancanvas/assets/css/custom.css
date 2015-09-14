@@ -973,3 +973,20 @@ body.node-type-services h2 {
   margin-bottom:20px;
 }
 
+/*** Second User Register Page **/
+body.page-user-register-2,
+body.page-user-login-2 {  
+  background: url(".../../../img/backgrounds/ocean.jpg") no-repeat;
+}
+
+#sign_up1,
+#sign_in1 {
+  background:none;
+}
+
+body.page-user-register-2 #footer,
+body.page-user-login-2 #footer{  
+ margin-top:-21px;
+}
+
+

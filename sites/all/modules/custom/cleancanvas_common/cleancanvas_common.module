@@ -16,6 +16,16 @@ function cleancanvas_common_theme($existing, $type, $theme, $path) {
       'arguments' => array('allowed_values' => NULL),
       'path' => $theme_dir,
    ),
+   'user_register_second' => array (
+      'template' => 'user--register--second',
+      'arguments' => array('register_form' => NULL),
+      'path' => $theme_dir,
+   ),
+   'user_login_second' => array (
+      'template' => 'user--login--second',
+      'arguments' => array('login_form' => NULL),
+      'path' => $theme_dir,
+   ),
  );
 }
 
@@ -49,6 +59,30 @@ function cleancanvas_common_block_view($delta = '') {
       break;
     }
   return $block;
+}
+
+/**
+ * Implements hook_menu().
+ */
+function cleancanvas_common_menu() {
+  // Second Registration Page
+  $items['user/register-2'] = array(
+    'title' => 'User Register',
+    'page callback' => 'user_register_second',
+    'access callback' => 'user_is_anonymous',
+    'type' => MENU_CALLBACK,
+    'file' => 'includes/cleancanvas_commom.page.inc',
+  );
+  
+  // Second Login Page
+  $items['user/login-2'] = array(
+    'title' => 'User Login',
+    'page callback' => 'user_login_second',
+    'access callback' => 'user_is_anonymous',
+    'type' => MENU_CALLBACK,
+    'file' => 'includes/cleancanvas_commom.page.inc',
+  );
+  return $items;
 }
 
 
