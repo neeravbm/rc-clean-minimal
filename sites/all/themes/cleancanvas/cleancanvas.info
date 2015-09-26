@@ -61,4 +61,5 @@ scripts[] = assets/js/index-slider.js
 scripts[] = assets/js/jquery.countdown.min.js
 scripts[] = assets/js/theme.js
 scripts[] = assets/js/flexslider.js
+scripts[] = assets/js/wow.js
 scripts[] = assets/js/custom.js

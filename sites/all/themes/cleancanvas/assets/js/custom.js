@@ -40,6 +40,10 @@
 			// Add class form-control in text-field
 			$("input[type='text']").addClass('form-control');
 			$("input[type='password']").addClass('form-control');
+			
+			// ----------initializing the wow.js ---------
+      var wow = new WOW({ mobile: false });
+      wow.init();
 
 	  }
 	}
@@ -58,4 +62,4 @@ function callback(event) {
 			case "daysLeft":
 			case "finished":
 	}
-}     
+}    

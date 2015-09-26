@@ -1,10 +1,10 @@
 <div class="big">
 <?php
 foreach ($images as $image):
-  $img_url = $image['uri'];
-  $style = 'large';
+  $imgurl = $image['uri'];
+  $style = 'portfolio_large';
 ?>
-  <img src="<?php print image_style_url($style, $img_url); ?>" style="display:none;" class="img-responsive">
+  <img src="<?php print image_style_url($style, $imgurl); ?>"  style="display:none;" class="img-responsive">
 <?php endforeach; ?>
 </div>
 
