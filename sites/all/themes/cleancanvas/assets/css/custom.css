@@ -1083,3 +1083,15 @@ body.page-user-login-2 #footer{
    margin-left:0px;
  }
 }
+
+.region-footer-thirdcolumn .messages ul li {
+   float: left !important;
+}
+
+.region-footer-thirdcolumn .headline {
+  text-align:left;
+}
+
+#footer .credits {
+  margin-top:50px;
+}
